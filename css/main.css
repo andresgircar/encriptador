@@ -1,0 +1,18 @@
+:root {
+    /*Palette*/
+    --main-color: #27DEBF;
+    /*Fonts*/
+    --button-font: "Jura", sans-serif;
+    --logo-font: "Keania One", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+header .logo {
+    font-family: var(--logo-font);
+    color: var(--main-color);
+    font-size: 4rem;
+}
