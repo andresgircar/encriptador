@@ -32,6 +32,23 @@ function encrypt(){
     document.getElementById('copy').className = 'copy-button';
     //Ocultar imagen
     document.getElementById('output-img').style.display = 'none';
+
+    //sweet alert - texto encriptado con éxito
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+    Toast.fire({
+        icon: "success",
+        title: "Texto encriptado con éxito"
+    });
 }
 
 //función para desencriptar
@@ -48,6 +65,22 @@ function decrypt() {
     document.getElementById('copy').className = 'copy-button';
     //Ocultar imagen
     document.getElementById('output-img').style.display = 'none';
+    //sweet alert - texto desencriptado con éxito
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+    Toast.fire({
+        icon: "success",
+        title: "Texto desencriptado con éxito"
+    });
 }
 
 document.getElementById('text-input').addEventListener('input', imgChanger);
@@ -69,6 +102,6 @@ function copyText(){
     navigator.clipboard.writeText(outputText);
     Swal.fire({
         icon: 'success',
-        text: 'Texto copiado con éxito'
+        text: 'Texto copiado satisfactoriamente'
     });
 }

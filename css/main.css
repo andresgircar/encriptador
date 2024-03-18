@@ -147,3 +147,55 @@ footer p {
     font-family: var(--button-font);
     font-size: 2rem;
 }
+
+/*breakpoints*/
+@media (max-width: 640px){
+    header .logo {
+        font-size: 2.5rem;
+        padding: 2rem 0 2rem;
+        text-align: center;
+    }
+    body {
+        height: auto;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .text-area-section {
+        width: 80%;
+        height: 50vh;
+        margin: 0 0 1rem;
+    }
+    main .text-area-section textarea {
+        height: 40%;
+        font-size: 1.4rem;
+    }
+    main .text-area-section h3 {
+        font-size: 1.6rem;  
+        margin: 0.8rem 1.6rem;
+    }
+    
+    main .text-area-section p {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.6rem 2rem;
+    }
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }    
+    .buttons-container button {
+        width: 80%;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+    main .text-output {
+        width: 80%;
+        height: 50vh;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1024px){
+
+}
