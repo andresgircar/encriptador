@@ -142,10 +142,13 @@ main .text-output .copy-hidden {
 footer {
     text-align: center;
 }
-
+footer a {
+    font-size: 2.4rem;
+}
 footer p {
     font-family: var(--button-font);
     font-size: 2rem;
+    margin: 2rem 0 1rem;
 }
 
 /*breakpoints*/
