@@ -16,9 +16,9 @@
     </header>
     <main>
         <section class="text-area-section">
-            <textarea placeholder="Escribe o copia y pega el mensaje que quieres encriptar" name="" id="text-input"></textarea>
+            <textarea placeholder="Escribe o copia y pega el mensaje que quieres encriptar" name="" id="text-input" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)"></textarea>
             <h3>Instrucciones:</h3>
-            <p>Ingresa el texto a encriptar en minúscula únicamente y sin acentos</p>
+            <p>Ingresa el texto a encriptar únicamente en minúscula y sin acentos, el sistema no te permitirá ingresar caracteres diferentes</p>
             <div class="buttons-container">
                 <button onclick="encrypt()"><img src="img/candado.png" width="27px" alt="">Encriptar</button>
                 <button onclick="decrypt()"><img src="img/candado-abierto.png" width="27px" alt="">Desencriptar</button>
