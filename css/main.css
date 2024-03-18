@@ -4,6 +4,7 @@
     /*Fonts*/
     --button-font: "Jura", sans-serif;
     --logo-font: "Keania One", sans-serif;
+    --text-font: "Inter", sans-serif;
 }
 
 html {
@@ -11,8 +12,138 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
 header .logo {
     font-family: var(--logo-font);
     color: var(--main-color);
     font-size: 4rem;
+    margin: 0;
+    padding: 3rem 0 3rem 3.5rem;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+main .text-area-section {
+    border: 0.2rem solid var(--main-color);
+    width: 45%;
+    height: 73vh;
+    border-radius: 1rem;
+    margin-left: 3.7rem;
+    overflow: hidden;
+}
+
+main .text-area-section textarea {
+    font-family: var(--text-font);
+    font-size: 2rem;
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 60%;
+    padding: 2rem 2.6rem 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+main .text-area-section h3 {
+    font-family: var(--text-font);
+    font-size: 2rem;
+    color: #808080;
+    font-weight: 500;
+    margin: 1rem 2rem;
+}
+
+main .text-area-section p {
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    color: #808080;
+    padding: 1rem 2rem 3rem;
+    border-bottom: 2px solid var(--main-color);
+    margin: 0;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-container button {
+    width: 45%;
+    background-color: white;
+    height: 6rem;
+    font-family: var(--button-font);
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 2rem 1rem 0;
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttons-container button:first-child {
+    background-color: var(--main-color);
+}
+
+.buttons-container button img {
+    padding-right: 1rem;
+}
+
+main .text-output {
+    border: 0.2rem solid var(--main-color);
+    width: 45%;
+    height: 73vh;
+    border-radius: 1rem;
+    margin-right: 3.7rem;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+main .text-output img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+main .text-output p {
+    font-family: var(--button-font);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+main .text-output .copy-button {
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+main .text-output .copy-hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-family: var(--button-font);
+    font-size: 2rem;
 }

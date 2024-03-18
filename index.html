@@ -13,6 +13,26 @@
     <header>
         <h1 class="logo">LET'S ENCRYPT</h1>
     </header>
-    <main></main>
+    <main>
+        <section class="text-area-section">
+            <textarea placeholder="Escribe o copia y pega el mensaje que quieres encriptar" name="" id="text-input"></textarea>
+            <h3>Instrucciones:</h3>
+            <p>Ingresa el texto a encriptar en minúscula únicamente y sin acentos</p>
+            <div class="buttons-container">
+                <button onclick="encrypt()"><img src="img/candado.png" width="27px" alt="">Encriptar</button>
+                <button onclick="decrypt()"><img src="img/candado-abierto.png" width="27px" alt="">Desencriptar</button>
+            </div>
+        </section>
+        <section class="text-output">
+            <img src="img/7906233_3804946.png" id="output-img" alt="">
+            <p id="text-cont">No encuentro nada para encriptar en mi sistema</p>
+            <button id="copy" class="copy-hidden" onclick="copyText()"><img src="img/copia.png" width="35px" alt=""></button>
+        </section>
+    </main>
+    <footer>
+        <p>Diseño y desarrollo Andrés Giraldo | 2024 | Para Alura Latam</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
