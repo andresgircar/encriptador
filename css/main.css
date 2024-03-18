@@ -194,6 +194,9 @@ footer p {
         height: 50vh;
         margin: 0;
     }
+    footer p {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 1024px){
